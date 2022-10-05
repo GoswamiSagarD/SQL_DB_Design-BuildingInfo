@@ -1,0 +1,196 @@
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| sgoswam            |
++--------------------+
+2 rows in set (0.01 sec)
+
+mysql> USE sgoswam;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> source SQLScript.sql;
+Database changed
+Query OK, 0 rows affected (0.68 sec)
+
+Query OK, 0 rows affected (0.18 sec)
+
+Query OK, 0 rows affected (0.10 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
+Query OK, 0 rows affected (0.21 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+Query OK, 0 rows affected (0.12 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
+Query OK, 0 rows affected (0.13 sec)
+
+Query OK, 10 rows affected (0.03 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+Query OK, 50 rows affected (0.02 sec)
+Records: 50  Duplicates: 0  Warnings: 0
+
+Query OK, 76 rows affected (0.04 sec)
+Records: 76  Duplicates: 0  Warnings: 0
+
+Query OK, 50 rows affected (0.10 sec)
+Records: 50  Duplicates: 0  Warnings: 0
+
+Query OK, 9 rows affected (0.07 sec)
+Records: 9  Duplicates: 0  Warnings: 0
+
+Query OK, 50 rows affected (0.04 sec)
+Records: 50  Duplicates: 0  Warnings: 0
+
+Query OK, 108 rows affected (0.04 sec)
+Records: 108  Duplicates: 0  Warnings: 0
+
+Query OK, 132 rows affected (0.04 sec)
+Records: 132  Duplicates: 0  Warnings: 0
+
+Query OK, 200 rows affected (0.04 sec)
+Records: 200  Duplicates: 0  Warnings: 0
+
++------------+-----------------------------------------+----------------------------+------------------+----------------+------------+
+| DeptPhone  | DeptName                                | DeptAddStreet              | DeptAddCity      | DeptAddState   | DeptAddZip |
++------------+-----------------------------------------+----------------------------+------------------+----------------+------------+
+| 1234560000 | Atmospheric, Oceanic and Earth Sciences | 82483 Schamberger Turnpike | Nicolastad       | North Carolina | 47811      |
+| 1234560001 | Biology                                 | 548 West Walks             | Arvelville       | West Virginia  | 09057      |
+| 1234560002 | Chemistry                               | 24837 Zoe Shoal            | Croninton        | Arkansas       | 09646      |
+| 1234560003 | Computational and Data Sciences         | 45734 Francis Glen         | Leoside          | Mississippi    | 81420      |
+| 1234560004 | Environmental Sciences                  | 97842 Eveline Vista        | Rileyfort        | Oregon         | 08319      |
+| 1234560005 | Forensic Sciences                       | 7118 Ellis Mill            | West Kaelyn      | Indiana        | 84310      |
+| 1234560006 | Geology                                 | 4973 Bella Unions          | New Lesleyhaven  | Alaska         | 37709      |
+| 1234560007 | Mathematics                             | 4780 Reichel Prairie       | Heidenreichburgh | California     | 24598      |
+| 1234560008 | Neuroscience                            | 4718 Jacobi Summit         | Kelliview        | Louisiana      | 46753      |
+| 1234560009 | Physics and Astronomy                   | 4780 Reichel Prairie       | Heidenreichburgh | California     | 24598      |
++------------+-----------------------------------------+----------------------------+------------------+----------------+------------+
+10 rows in set (0.00 sec)
+
++-----------------------------+---------------+
+| Bldgname                    | COUNT(RoomNo) |
++-----------------------------+---------------+
+| Aquia Building              |             7 |
+| Art and Design Building     |             3 |
+| Entreprise Hall             |             8 |
+| Exploration Hall            |             8 |
+| Fenwick Building            |            11 |
+| Horizon Hall                |             5 |
+| Nguyen Engineering Building |             4 |
+| Research Hall               |             4 |
++-----------------------------+---------------+
+8 rows in set (0.00 sec)
+
++-------------------------+--------+-------------+--------------------+
+| BldgName                | RoomNo | RoomLabFlag | RoomConferenceFlag |
++-------------------------+--------+-------------+--------------------+
+| Art and Design Building |      3 |           1 |                  1 |
+| Horizon Hall            |      1 |           1 |                  1 |
++-------------------------+--------+-------------+--------------------+
+2 rows in set (0.00 sec)
+
++-----------------------------+--------+----------------------+
+| BldgName                    | RoomNo | AVG(MeasTemperature) |
++-----------------------------+--------+----------------------+
+| Aquia Building              |      1 |              69.6000 |
+| Aquia Building              |      2 |              67.0000 |
+| Aquia Building              |      4 |              88.6667 |
+| Aquia Building              |      5 |              63.7500 |
+| Aquia Building              |      6 |              78.3333 |
+| Aquia Building              |      7 |              72.1429 |
+| Art and Design Building     |      1 |              80.7143 |
+| Art and Design Building     |      2 |              61.6667 |
+| Art and Design Building     |      3 |              64.2500 |
+| Entreprise Hall             |      1 |              92.3333 |
+| Entreprise Hall             |      2 |              71.1538 |
+| Entreprise Hall             |      3 |              71.5000 |
+| Entreprise Hall             |      4 |              75.6000 |
+| Entreprise Hall             |      5 |              76.0000 |
+| Entreprise Hall             |      6 |              69.8000 |
+| Entreprise Hall             |      7 |              79.5000 |
+| Entreprise Hall             |      8 |              78.0000 |
+| Exploration Hall            |      1 |              91.7500 |
+| Exploration Hall            |      4 |              84.8000 |
+| Exploration Hall            |      5 |              63.5000 |
+| Exploration Hall            |      6 |              77.3333 |
+| Exploration Hall            |      7 |              82.0000 |
+| Exploration Hall            |      8 |              65.2000 |
+| Fenwick Building            |      1 |              68.6667 |
+| Fenwick Building            |      2 |              97.0000 |
+| Fenwick Building            |      3 |              77.0000 |
+| Fenwick Building            |      4 |              87.3333 |
+| Fenwick Building            |      5 |              83.6667 |
+| Fenwick Building            |      6 |              91.0000 |
+| Fenwick Building            |      7 |              96.0000 |
+| Fenwick Building            |      8 |              71.2000 |
+| Fenwick Building            |      9 |              67.6667 |
+| Fenwick Building            |     10 |              75.6667 |
+| Fenwick Building            |     11 |              79.2500 |
+| Horizon Hall                |      1 |              82.7500 |
+| Horizon Hall                |      2 |              86.5000 |
+| Horizon Hall                |      3 |              65.0000 |
+| Horizon Hall                |      4 |              80.0000 |
+| Nguyen Engineering Building |      1 |              75.2500 |
+| Nguyen Engineering Building |      2 |              81.5000 |
+| Nguyen Engineering Building |      3 |              76.7500 |
+| Nguyen Engineering Building |      4 |              80.6000 |
+| Research Hall               |      1 |              71.0000 |
+| Research Hall               |      2 |              66.0000 |
+| Research Hall               |      3 |              75.5000 |
+| Research Hall               |      4 |              70.0000 |
++-----------------------------+--------+----------------------+
+46 rows in set (0.00 sec)
+
++------------------+--------+----------+-----------------+
+| BldgName         | RoomNo | RoomArea | MeasTemperature |
++------------------+--------+----------+-----------------+
+| Aquia Building   |      3 |     4785 |            NULL |
+| Exploration Hall |      2 |     2955 |            NULL |
+| Exploration Hall |      3 |     3740 |            NULL |
+| Horizon Hall     |      5 |     2000 |            NULL |
++------------------+--------+----------+-----------------+
+4 rows in set (0.00 sec)
+
++-------+--------------+
+| EmpID | NoOfEmailIDs |
++-------+--------------+
+|     1 |            2 |
+|     5 |            2 |
+|     6 |            2 |
+|     7 |            2 |
+|     8 |            2 |
+|    10 |            2 |
+|    12 |            2 |
+|    13 |            2 |
+|    15 |            2 |
+|    18 |            2 |
+|    19 |            2 |
+|    21 |            2 |
+|    22 |            2 |
+|    24 |            2 |
+|    26 |            2 |
+|    28 |            2 |
+|    30 |            2 |
+|    32 |            2 |
+|    33 |            2 |
+|    36 |            2 |
+|    37 |            2 |
+|    38 |            2 |
+|    39 |            2 |
+|    41 |            2 |
+|    43 |            2 |
+|    49 |            2 |
++-------+--------------+
+26 rows in set (0.00 sec)
+
+mysql> exit
